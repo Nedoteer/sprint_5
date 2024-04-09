@@ -22,5 +22,4 @@ class TestPersonalAccount:
 
         assert area_current.is_displayed() and area_current.text == 'Профиль'
 
-        driver.quit()
 

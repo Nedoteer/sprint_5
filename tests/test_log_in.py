@@ -22,7 +22,6 @@ class TestStellarBurgersLogIn:
 
         assert button_name.is_displayed() and button_name.text == 'Оформить заказ'
 
-        driver.quit()
 
 
     def test_log_in_button_personal_account(self, driver):
@@ -42,7 +41,6 @@ class TestStellarBurgersLogIn:
 
         assert button_name.is_displayed() and button_name.text == 'Оформить заказ'
 
-        driver.quit()
 
 
     def test_log_in_use_link_registration_form(self, driver):
@@ -63,7 +61,6 @@ class TestStellarBurgersLogIn:
 
         assert button_name.is_displayed() and button_name.text == 'Оформить заказ'
 
-        driver.quit()
 
 
     def test_log_in_use_link_in_password_reset_form(self, driver):
@@ -84,7 +81,6 @@ class TestStellarBurgersLogIn:
 
         assert button_name.is_displayed() and button_name.text == 'Оформить заказ'
 
-        driver.quit()
 
 
 

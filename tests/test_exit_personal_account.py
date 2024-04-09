@@ -27,4 +27,3 @@ class TestExitPersonalAccount:
 
         assert text_enter.is_displayed() and text_enter.text == 'Вход'
 
-        driver.quit()

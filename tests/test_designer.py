@@ -26,7 +26,6 @@ class TestStellarBurgersDesigner:
 
         assert text_filing.is_displayed() and text_filing.text == 'Начинки'
 
-        driver.quit()
 
 
     def test_select_sauce(self, driver):
@@ -49,7 +48,6 @@ class TestStellarBurgersDesigner:
 
         assert text_sause.is_displayed() and text_sause.text == 'Соусы'
 
-        driver.quit()
 
     def test_select_burgers(self, driver):
         driver.find_element(*StellarBurgersLocators.BUTTON_LOGIN_IN_ACCOUNT).click()
@@ -72,4 +70,3 @@ class TestStellarBurgersDesigner:
 
         assert text_burgers.is_displayed() and text_burgers.text == 'Булки'
 
-        driver.quit()

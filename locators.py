@@ -3,11 +3,11 @@ from selenium.webdriver.common.by import By
 
 class StellarBurgersLocators:
 
-    REGISTER_NAME_ACCOUNT = (By.XPATH, "(//input[@type = 'text'])[1]") # Указаное имя при регистрации
-    REGISTER_EMAIL_ACCOUNT = (By.XPATH, "(//input[@type = 'text'])[2]") # Указаный  email при регистрации
+    REGISTER_NAME_ACCOUNT = (By.XPATH, "//label[text() = 'Имя']/following-sibling::input") # Указаное имя при регистрации
+    REGISTER_EMAIL_ACCOUNT = (By.XPATH, "//label[text() = 'Email']/following-sibling::input") # Указаный  email при регистрации
     PASSWORD_ACCOUNT = (By.XPATH, "//input[@type = 'password']") # Указаный пароль при регистрации
     CORRECT = (By.XPATH, "//button[contains(text(), 'Войти')]") # Кнопка ввойти при вводе логина и пароля или регистрации
-    EMAIL_ACCOUNT = (By.XPATH, "(//input[@type = 'text'])[1]") # Поле ввода еmail
+    EMAIL_ACCOUNT = (By.XPATH, "//div[@class = 'input__container']/descendant::label[text() = 'Email']/following-sibling::input") # Поле ввода еmail
 
 
     BUTTON_LOGIN_IN_ACCOUNT = (By.XPATH, ".//button[contains(text(), 'Войти в аккаунт')]") # Кнопка войти в аккаунт

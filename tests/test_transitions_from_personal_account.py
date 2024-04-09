@@ -23,7 +23,6 @@ class TestTransitionsFromPersonalAccount:
 
         assert text_designer.is_displayed() and text_designer.text == 'Соберите бургер'
 
-        driver.quit()
 
 
     def test_from_personal_account_in_click_logo(self, driver):
@@ -43,6 +42,5 @@ class TestTransitionsFromPersonalAccount:
 
         assert text_designer.is_displayed() and text_designer.text == 'Соберите бургер'
 
-        driver.quit()
 
 
